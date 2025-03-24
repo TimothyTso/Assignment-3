@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <h1 class="header">Heron's Formula</h1>
+        <label for="Ha">Side A: </label><br>
+        <input type="number" id="Ha" name="SideA"><br>
+        <label for="Hb">Side B: </label><br>
+        <input type="number" id="Hb" name="Sideb"><br>
+        <label for="Ha">Side C: </label><br>
+        <input type="number" id="Ha" name="SideC"><br>
+        <label for="aH">Area: </label><br>
+        <input type="number" id="aH" name="areah" readonly><br>
+        <button type="submit" id="ch" class="calculate">Calculate</button>
+    </div>
+    <div class="box">
+        <h1 class="header">Ambiguous Case</h1>
+        <label for="aca">Angle A (°) </label><br>
+        <input type="number" id="aca" name="angleA"><br>
+        <label for="acb">Angle B (°): </label><br>
+        <input type="number" id="acb" name="angleB"><br>
+        <label for="acc">Angle C (°): </label><br>
+        <input type="number" id="acc" name="angleC"><br>
+        <label for="act">Triangles </label><br>
+        <input type="text" id="act" name="ambiguousType" readonly><br>
+        <button type="submit" id="ca" class="calculate">Calculate</button>
+    </div>
+    <div class="box">
+        <h1 class="header">Newton's Method</h1>
+        <label for="rg">Root Guess: </label><br>
+        <input type="number" id="rg" name="rootg"><br>
+        <label for="ra">Root Approx: </label><br>
+        <input type="number" id="ra" name="roota"><br>
+        <button type="submit" id="ch" class="calculate">Calculate</button>
+    </div>
+    <div class="box">
+        <h1 class="header">Polynomial Function</h1>
+        <label for="co">Coefficients: </label><br>
+        <input type="text" id="co" name="coefficients"><br>
+        <label for="ex">Exponents </label><br>
+        <input type="text" id="ex" name="exponents"><br>
+        <label for="xv">X Value: </label><br>
+        <input type="text" id="xv" name="xvalue"><br>
+        <label for="pf">Polynomial Function: (Result): </label><br>
+        <input type="text" id="pf" name="polyfunc" readonly><br>
+        <label for="pf">Polynomial Evaluation (Result): </label><br>
+        <input type="text" id="pf" name="polyfunc" readonly><br>
+        <button type="submit" id="ch" class="calculate">Calculate</button>
+    </div>
+</body>
+</html>
