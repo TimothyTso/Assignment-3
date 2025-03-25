@@ -13,11 +13,16 @@ function heronFormula() {
     const a= Number(document.getElementById("ha").value);
     const b= Number(document.getElementById("hb").value);
     const c= Number(document.getElementById("hc").value);
-    
-    document.getElementById("ah").value = "";
+
+    document.getElementById("ah").value = null;
     let area = Math.round((0.25 * (Math.sqrt(4 * a ** 2 * b ** 2 -(a ** 2 + b ** 2 - c ** 2) **2 ))) * 100) / 100;
-    document.getElementById("ah").value = area;
-    console.log("efewfef");
+    let discrim = (4 * a ** 2 * b ** 2 -(a ** 2 + b ** 2 - c ** 2) **2 );
+    if (discrim < 0){
+        document.getElementById("ah").value = "Imaginary Value";
+    } else {
+        document.getElementById("ah").value = `${area}`;
+    }
+    
 }
 
 function ambiguousCase(){
