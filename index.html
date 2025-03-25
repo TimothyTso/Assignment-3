@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
@@ -10,14 +11,14 @@
 <body>
     <div class="box">
         <h1 class="header">Heron's Formula</h1>
-        <label for="Ha">Side A: </label><br>
-        <input type="number" id="Ha" name="SideA"><br>
-        <label for="Hb">Side B: </label><br>
-        <input type="number" id="Hb" name="Sideb"><br>
-        <label for="Ha">Side C: </label><br>
-        <input type="number" id="Ha" name="SideC"><br>
-        <label for="aH">Area: </label><br>
-        <input type="number" id="aH" name="areah" readonly><br>
+        <label for="ha">Side A: </label><br>
+        <input type="number" id="ha" name="SideA"><br>
+        <label for="hb">Side B: </label><br>
+        <input type="number" id="hb" name="Sideb"><br>
+        <label for="hc">Side C: </label><br>
+        <input type="number" id="hc" name="SideC"><br>
+        <label for="ah">Area: </label><br>
+        <input type="number" id="ah" name="areah" readonly><br><br>
         <button type="submit" id="ch" class="calculate">Calculate</button>
     </div>
     <div class="box">
@@ -36,9 +37,9 @@
         <h1 class="header">Newton's Method</h1>
         <label for="rg">Root Guess: </label><br>
         <input type="number" id="rg" name="rootg"><br>
-        <label for="ra">Root Approx: </label><br>
-        <input type="number" id="ra" name="roota"><br>
-        <button type="submit" id="ch" class="calculate">Calculate</button>
+        <label for="ra">Root Approx (Result): </label><br>
+        <input type="number" id="ra" name="roota" readonly><br><br>
+        <button type="submit" id="cn" class="calculate">Calculate</button>
     </div>
     <div class="box">
         <h1 class="header">Polynomial Function</h1>
@@ -51,8 +52,10 @@
         <label for="pf">Polynomial Function: (Result): </label><br>
         <input type="text" id="pf" name="polyfunc" readonly><br>
         <label for="pf">Polynomial Evaluation (Result): </label><br>
-        <input type="text" id="pf" name="polyfunc" readonly><br>
-        <button type="submit" id="ch" class="calculate">Calculate</button>
+        <input type="text" id="pe" name="polyeva" readonly><br>
+        <button type="submit" id="cp" class="calculate">Calculate</button>
     </div>
+    <script defer src="script.js"></script>
 </body>
+
 </html>
